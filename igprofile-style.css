@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+.ig-wrapper-outer {
+  width: 700px;
+  margin: 30px auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  font-family: 'Nimbus-Sans-Extended', Helvetica, sans-serif;
+  color: #222;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.ig-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+  position: relative;
+}
+
+.ig-logo-left,
+.ig-icons {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ig-logo-left {
+  left: 30px;
+}
+
+.ig-icons {
+  right: 30px;
+  gap: 10px;
+}
+
+.ig-logo-text {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 30px;
+  color: #000;
+}
+
+.ig-search {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.ig-search input {
+  padding: 6px 35px 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+  background: #fff;
+  color: #555;
+  text-transform: none;
+  text-align: left;
+}
+
+.ig-search .material-icons-outlined {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.ig-profile-container {
+  padding: 25px 30px;
+  background: #fff;
+}
+
+.ig-profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.ig-avatar {
+  flex: 0 0 150px;
+  cursor: pointer;
+}
+
+.ig-avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  background: white;
+  padding: 5px;
+}
+
+.ig-info {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.ig-username-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.ig-username {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+.ig-button {
+  padding: 8px 10px;
+  border: none;
+  background: #eee;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  color: #222;
+}
+
+.ig-button:hover {
+  background-color: #ddd;
+}
+
+.ig-stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #333;
+}
+
+.ig-bio {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.followed-by {
+  padding-top: 50px;
+  font-size: 12px;
+  color: #555;
+}
+
+.ig-highlights {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.ig-highlight {
+  text-align: center;
+  font-size: 10px;
+  color: #333;
+}
+
+.ig-highlight img,
+.ig-highlight .plus {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  padding: 3px;
+  object-fit: cover;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-size: 46px;
+  color: #bbb;
+}
+
+.ig-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.ig-tab {
+  color: #777;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  margin-top: -15px;
+  padding-top: 15px;
+}
+
+.ig-tab.active {
+  color: #000;
+  border-top: 1px solid #000;
+  padding-top: 17px;
+  margin-top: -20px;
+}
+
+.ig-tab i {
+  font-size: 18px;
+}
+
+.ig-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  background: #fff;
+  margin-top: 10px;
+}
+
+.ig-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
